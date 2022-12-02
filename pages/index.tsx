@@ -1,6 +1,6 @@
 import type { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 const  Header = dynamic(() => import('../components/Header'), { ssr: false })
 // import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -10,7 +10,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { Experience, PageInfo, Project, Skill, Social } from '../typings';
 import { fetchPageInfo } from '../utils/fetchPageInfo';
 import { fetchExperiences } from '../utils/fetchExperiences';
@@ -69,7 +69,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <ContactMe />
       </section>
       
-      <Link href='#hero'>
+      {/* <Link href='#hero'>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
             <img 
@@ -79,7 +79,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
             />
           </div>
         </footer>
-      </Link>
+      </Link> */}
     </div>
   )
 }
