@@ -7,7 +7,7 @@ type Props = {
   // experience: Experience;
 }
 // experience
-function ExperienceCard({}: Props) {
+function ExperienceCard2({}: Props) {
   return (
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[400px] md:w-[600px] xl:w-[900px] snap-center p-10 bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
       <motion.img 
@@ -17,43 +17,38 @@ function ExperienceCard({}: Props) {
       viewport={{ once: true }}
       className='w-32 h-32 rounded-full xs:w-[15px] xs:h-[15px] xl:w-[200px] xl:h-[200px] object-cover object-center'
       // {urlFor(experience?.companyImage).url()}
-      src="CNS.jpeg"
+      src="IUB.png"
       alt=""
       />
 
       <div className='px-0 md:px-10'>
         <h4 className='md:text-4xl text2xl font-light'>
-          Software Engineer Intern/Co-op
+          Graduate Teaching Assistant
           {/* {experience.jobTitle} */}
         </h4>
         <p className='font-bold md:text-2xl text-xl mt-1'>
           {/* {experience.company} */}
-          Cyber Infrastructure for Network Science Center
+          Indiana University Bloomington
           </p>
         <div className='flex space-x-2 my-2'>
             <img
               className='h-10 w-10 rounded-full'
-              src="Angular.png"
+              src="React.svg"
               alt=''
             />
             <img
               className='h-10 w-10 rounded-full'
-              src="html.png"
+              src="node.png"
               alt=''
             />
             <img
               className='h-10 w-10 rounded-full'
-              src="Jasmine.png"
+              src="MongoDB.jpg"
               alt=''
             />
             <img
               className='h-10 w-10 rounded-full'
-              src="css.png"
-              alt=''
-            />
-            <img
-              className='h-10 w-10 rounded-full'
-              src="sass.png"
+              src="PostgreSQL.jpg"
               alt=''
             />
           {/* {experience.technologies.map((technology) => (
@@ -68,7 +63,7 @@ function ExperienceCard({}: Props) {
         </div>
 
         <p className='uppercase py-5 text-gray-300'>
-          06/04/2022 - Present
+          01/09/2022 - 05/30/2022
           {/* {new Date(experience.dateStarted).toDateString()} - {experience.isCurrentlyWorkingHere ? "Present" 
           : new Date(experience.dateEnded).toDateString()} */}
         </p>
@@ -77,13 +72,13 @@ function ExperienceCard({}: Props) {
           {/* {experience.points.map((point, i) => (
             <li key={i}>{point}</li>
           ))} */}
-          <li>Designed a portal for a NSF-funded biomedical visualization project which displayed detailed analysis in form of graphs for biomedical researchers.</li>
-          <li>Developed behavioral components and handled state management using NGXS improving flow of components by 15%.</li>
-          <li>Collaborated with a team of 10 members and generated storybooks using Angular which isolated components and escalated development speed by 20%.</li>
+          <li>Served as a graduate teaching assistant for the course Software Engineering-I and helped students build websites with complex functionalities like Chatbot, Maps, Voice Recognition.</li>
+          <li>Assisted professor in articulating course structure into multiple stages which refined clarity of project requirements by 30%.</li>
+          <li>Mentored students in planning various stages of project which reduced product delivery time by 15%.</li>
         </ul>
       </div>
     </article>
   )
 }
 
-export default ExperienceCard
+export default ExperienceCard2

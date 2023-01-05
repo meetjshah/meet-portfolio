@@ -11,57 +11,58 @@ import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
 import dynamic from 'next/dynamic';
 // import Link from 'next/link';
-import { Experience, PageInfo, Project, Skill, Social } from '../typings';
-import { fetchPageInfo } from '../utils/fetchPageInfo';
-import { fetchExperiences } from '../utils/fetchExperiences';
-import { fetchSkills } from '../utils/fetchSkills';
-import { fetchProjects } from '../utils/fetchProjects';
-import { fetchSocials } from '../utils/fetchSocials';
+// import { Experience, PageInfo, Project, Skill, Social } from '../typings';
+// import { fetchPageInfo } from '../utils/fetchPageInfo';
+// import { fetchExperiences } from '../utils/fetchExperiences';
+// import { fetchSkills } from '../utils/fetchSkills';
+// import { fetchProjects } from '../utils/fetchProjects';
+// import { fetchSocials } from '../utils/fetchSocials';
 
 
 type Props = {
-  pageInfo: PageInfo;
-  experiences: Experience[];
-  skills: Skill[];
-  projects: Project[];
-  socials: Social[];
+  // pageInfo: PageInfo;
+  // experiences: Experience[];
+  // skills: Skill[];
+  // projects: Project[];
+  // socials: Social[];
 
 }
-
-const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
+// pageInfo, experiences, skills, projects, socials
+const Home = ({}: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar
      scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
-        <title>{pageInfo?.name} -  Portfolio</title>
+      {/* {pageInfo?.name} */}
+        <title> Meet Shah - Portfolio</title>
       </Head>
 
-      {/* Header */}
-      <Header socials={socials} />
+      {/* Header socials={socials}*/}
+      <Header />
 
-      {/* Hero */}
+      {/* Hero pageInfo={pageInfo}*/}
       <section id='hero' className='snap-start'>
-        <Hero pageInfo={pageInfo}/>
+        <Hero />
       </section>
 
-      {/* About */}
+      {/* About pageInfo={pageInfo}*/}
       <section id='about' className='snap-center'>
-        <About pageInfo={pageInfo}/>
+        <About />
       </section>
 
-      {/* Experience */}
+      {/* Experience experiences={experiences}*/}
       <section id="experience" className='snap-center'>
-        <WorkExperience experiences={experiences}/>
+        <WorkExperience />
       </section>
 
-      {/* Skills */}
+      {/* Skills skills={skills}*/}
       <section id='skills' className='snap-start'>
-        <Skills skills={skills}/>
+        <Skills />
       </section>
 
-      {/* Projects */}
+      {/* Projects projects={projects}*/}
       <section id='projects' className='snap-start'>
-        <Projects projects={projects}/>
+        <Projects />
       </section>
 
       {/* Contact Me */}
@@ -86,22 +87,22 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: Experience[] = await fetchExperiences();
-  const skills: Skill[] = await fetchSkills();
-  const projects: Project[] = await fetchProjects();
-  const socials: Social[] = await fetchSocials();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   const experiences: Experience[] = await fetchExperiences();
+//   const skills: Skill[] = await fetchSkills();
+//   const projects: Project[] = await fetchProjects();
+//   const socials: Social[] = await fetchSocials();
 
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      projects,
-      socials,
-    },
+//   return {
+//     props: {
+//       // pageInfo,
+//       // experiences,
+//       // skills,
+//       // projects,
+//       // socials,
+//     },
 
-    revalidate: 10,
-  }
-}
+//     revalidate: 10,
+//   }
+// }

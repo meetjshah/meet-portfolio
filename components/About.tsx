@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PageInfo } from '../typings';
-import { urlFor } from '../sanity';
+// import { PageInfo } from '../typings';
+// import { urlFor } from '../sanity';
 
-type Props = {
-    pageInfo: PageInfo;
-}
-
-function About({pageInfo}: Props) {
+type Props = {};
+// type Props = {
+//     pageInfo: PageInfo;
+// }
+// {pageInfo}: Props
+function About({} : Props) { 
   return (
     <motion.div 
     initial={{ opacity:0 }}
@@ -26,9 +27,10 @@ function About({pageInfo}: Props) {
             transition={{
                 duration: 1.2,
             }}
+            // {urlFor(pageInfo?.profilePic).url()}
             whileInView={{ opacity:1, x: 0 }}
             viewport={{ once: true }}
-            src={urlFor(pageInfo?.profilePic).url()}
+            src="Meet_photo_.jpg"
             className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
         />
 
@@ -39,7 +41,12 @@ function About({pageInfo}: Props) {
                 background
             </h4>
             <p className='text-base'>
-            {pageInfo.backgroundInformation}
+            {`I'm Meet Shah, currently studying Masters in Computer Science at Indiana University - Bloomington. 
+            I have completed three internships as a Software Engineer where I've worked with both startups and large corporations to help build and scale their companies. 
+            I've been passionate about development from ever since I first got exposure to it's resources. 
+            Along the journey I witnessed my passion for development increasing exponetially, as I never got bored or tired even if it meant sitting for several hours to get job done. 
+            I'm grateful for the opportunities I've got and can't wait to explore what opportunities future awaits.`}
+            {/* {pageInfo.backgroundInformation} */}
             </p>
         </div>
     

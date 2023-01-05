@@ -1,14 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import Skill from './Skill';
-import { Skill as SkillType } from '../typings';
+// import { isExpressionStatement } from 'typescript';
+// import { Skill as SkillType } from '../typings';
 
 
 type Props = {
-  skills: SkillType[];
+  // skills: SkillType[];
 }
-
-function Skills({ skills }: Props) {
+// skills
+function Skills({}: Props) {
   return (
     <motion.div 
     initial={{ opacity: 0 }}
@@ -26,13 +27,36 @@ function Skills({ skills }: Props) {
         </h3>
 
         <div className='grid grid-cols-4 gap-5 pt-48'>
-          {skills?.slice(0, skills.length / 2).map(skill => (
+
+          <Skill titlesrc="ExpressJS.png" proficiency='80' />
+          <Skill titlesrc="Angular.png" proficiency='90'/>
+          <Skill titlesrc="css.png" proficiency='95'/>
+          <Skill titlesrc="html.png" proficiency='95'/>
+          <Skill titlesrc="Jasmine.png" proficiency='70'/>
+          <Skill titlesrc="MongoDB.jpg" proficiency='85'/>
+          <Skill titlesrc="node.png" proficiency='80'/>
+          <Skill titlesrc="React.svg" proficiency='90'/>
+          <Skill titlesrc="PostgreSQL.jpg" proficiency='80'/>
+          <Skill titlesrc="sass.png" proficiency='90'/>
+          <Skill titlesrc="typescript.png" proficiency='85'/>
+          <Skill titlesrc="MySQL.png" proficiency='80'/>
+          <Skill titlesrc="git.png" proficiency='90'/>
+          <Skill titlesrc="javascript.png" proficiency='85'/>
+          <Skill titlesrc="python.png" proficiency='95'/>
+          <Skill titlesrc="Bootstrap.png" proficiency='85'/>
+          <Skill titlesrc="tailwind.jpg" proficiency='80'/>
+          <Skill titlesrc="Firebase.png" proficiency='90'/>
+          <Skill titlesrc="VSCode.png" proficiency='90'/>
+          <Skill titlesrc="redux.png" proficiency='80'/>
+
+
+          {/* {skills?.slice(0, skills.length / 2).map(skill => (
             <Skill key={skill._id} skill={skill} />
           ))}
           
           {skills?.slice(skills.length / 2, skills.length).map(skill => (
             <Skill key={skill._id} skill={skill} directionLeft/>
-          ))}
+          ))} */}
 
 
         </div>   
