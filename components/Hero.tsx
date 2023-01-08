@@ -31,17 +31,17 @@ export default function Hero({}: Props) { //{ pageInfo }: Props
         src="Meet_profilepic.jpeg" alt='' /> 
         {/* {urlFor(pageInfo?.heroImage).url()} */}
         <div className='z-20'>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[5px] md:tracking-[15px] '>
                 Software Engineer
              {/* {pageInfo?.role} */}
 
             </h2>
-            <h1 className='text-4xl lg:txt-5xl font-semibold px-10'>
-                <span className='mr-3'>{text}</span>
+            <h1 className='text-xl md:text-4xl lg:txt-5xl font-semibold px-10'>
+                <span className='mr-3 sm:mr-0'>{text}</span>
                 <Cursor cursorColor='#F7AB0A' />
             </h1>
-        
-            <div className='pt-3'>
+            {/* flex flex-row */}
+            <div className='pt-3'> 
                 <Link href='#about'>
                 <button className='heroButton'>About</button>
                 </Link>

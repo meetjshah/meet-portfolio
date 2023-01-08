@@ -64,12 +64,12 @@ const Projects = ({}: Props) => {
                     whileInView={{ opacity:1, y: 0 }}
                     viewport={{ once: true }}
                     src="CNS_Spoke_Bric.jpg"
-                    className='h-[400px]'
+                    className='h-[200px] md:h-[400px]'
                     alt=''
                     />
 
-                    <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-                        <h4 className='text-4xl font-semibold text-center xs:text-2xl s:text-2xl md:text-3xl'>
+                    <div className='space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl'>
+                        <h4 className='text-lg md:text-3xl font-semibold text-center xs:text-2xl s:text-2xl'>
                             <span className='decoration-[#F7AB0A]/50'>Case Study 1 of 2:</span>{" "}
                             Biomedical Visualization Project
                         </h4>
@@ -97,7 +97,7 @@ const Projects = ({}: Props) => {
                             />
                         </div>
 
-                        <p className='text-lg text-center md:text-left'>
+                        <p className='text-base md:text-lg text-center md:text-left'>
                         This project is a biomedical visualization project which has dashboard panels for showing statistical graph analysis 
                         of research papers for biomedical researchers in an efficient way which highlights important parts of research using predefined keywords.
                         </p>
@@ -111,12 +111,12 @@ const Projects = ({}: Props) => {
                     whileInView={{ opacity:1, y: 0 }}
                     viewport={{ once: true }}
                     src="Speedy-Rent(Screenshot).png"
-                    className='h-[400px]'
+                    className='h-[200px] md:h-[400px]'
                     alt=''
                     />
 
-                    <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-                        <h4 className='text-4xl font-semibold text-center xs:text-2xl s:text-2xl md:text-3xl'>
+                    <div className='space-y-5 md:space-y-10 px-0 md:px-10 max-w-6xl'>
+                        <h4 className='text-lg md:text-3xl font-semibold text-center xs:text-2xl s:text-2xl'>
                             <span className='decoration-[#F7AB0A]/50'>Case Study 2 of 2:</span>{" "}
                             Speedy Rent
                         </h4>
@@ -149,7 +149,7 @@ const Projects = ({}: Props) => {
                             />
                         </div>
 
-                        <p className='text-lg text-center md:text-left'>
+                        <p className='text-base md:text-lg text-center md:text-left'>
                         This website stores and displays information about products rented and available for rent with Map location. 
                         It also has features like Voice Recognition, ChatBot, Chat, Messaging, Search and Filter Recommendation.
                         </p>
