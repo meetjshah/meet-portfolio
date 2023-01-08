@@ -27,7 +27,7 @@ const ContactMe = (props: Props) => {
         </h3>
 
         <div className='flex flex-col space-y-10'>
-            <h4 className='text-2xl md:text-4xl font-semibold text-center'>
+            <h4 className='text-2xl md:text-4xl pt-[30px] md:pt-0 font-semibold text-center'>
                 {/* I have got just what you need.{" "} */}
                 <span className='decoration-[#F7AB0A]/50 underline'>Let us Talk</span> 
             </h4>
@@ -54,7 +54,7 @@ const ContactMe = (props: Props) => {
             onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col space-y-2 w-[300px] md:w-fit mx-auto max-w-sm md:max-w-none'
             >
-                <div className='flex space-x-2'>
+                <div className='flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2'>
                     <input {...register('name')} placeholder='Name' className='contactInput' type='text'/>
                     <input {...register('email')} placeholder='Email' className='contactInput' type='email'/>
                 </div>
