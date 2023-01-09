@@ -26,26 +26,26 @@ function Skills({}: Props) {
           Hover over a skill for current proficiency
         </h3>
 
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 pt-36 md:pt-48'>
+        <div className='grid grid-cols-4 md:grid-cols-4 gap-2 md:gap-5 pt-36 md:pt-48'>
 
           <Skill titlesrc="ExpressJS.png" proficiency='80' />
           <Skill titlesrc="Angular.png" proficiency='90'/>
           <Skill titlesrc="css.png" proficiency='95'/>
-          <Skill titlesrc="html.png" proficiency='95'/>
           <Skill titlesrc="Jasmine.png" proficiency='70'/>
+          <Skill titlesrc="html.png" proficiency='95'/>
           <Skill titlesrc="MongoDB.jpg" proficiency='85'/>
           <Skill titlesrc="node.png" proficiency='80'/>
-          <Skill titlesrc="React.svg" proficiency='90'/>
+          <Skill titlesrc="tailwind.jpg" proficiency='80'/>
           <Skill titlesrc="PostgreSQL.jpg" proficiency='80'/>
           <Skill titlesrc="sass.png" proficiency='90'/>
           <Skill titlesrc="typescript.png" proficiency='85'/>
-          <Skill titlesrc="MySQL.png" proficiency='80'/>
+          <Skill titlesrc="Firebase.png" proficiency='90'/>
           <Skill titlesrc="git.png" proficiency='90'/>
-          <Skill titlesrc="javascript.png" proficiency='85'/>
+          <Skill titlesrc="MySQL.png" proficiency='80'/>
           <Skill titlesrc="python.png" proficiency='95'/>
           <Skill titlesrc="Bootstrap.png" proficiency='85'/>
-          <Skill titlesrc="tailwind.jpg" proficiency='80'/>
-          <Skill titlesrc="Firebase.png" proficiency='90'/>
+          <Skill titlesrc="React.svg" proficiency='90'/>
+          <Skill titlesrc="javascript.png" proficiency='85'/>
           <Skill titlesrc="VSCode.png" proficiency='90'/>
           <Skill titlesrc="redux.png" proficiency='80'/>
 
