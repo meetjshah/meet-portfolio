@@ -26,7 +26,7 @@ function Skills({}: Props) {
           Hover over a skill for current proficiency
         </h3>
 
-        <div className='grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-5 pt-36 md:pt-48 overflow-y-scroll'>
+        <div className='grid grid-cols-4 md:grid-cols-4 gap-2 md:gap-5 pt-36 md:pt-48 overflow-x-scroll'>
 
           <Skill titlesrc="ExpressJS.png" proficiency='80' />
           <Skill titlesrc="Angular.png" proficiency='90'/>
