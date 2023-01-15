@@ -27,7 +27,7 @@ export default function Hero({}: Props) { //{ pageInfo }: Props
     return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
-        <img className='relative rounded-full h-40 w-40 mx-auto object-cover' 
+        <img className='relative rounded-full h-28 w-28 md:h-40 md:w-40 mx-auto object-cover' 
         src="Meet_profilepic.jpeg" alt='' /> 
         {/* {urlFor(pageInfo?.heroImage).url()} */}
         <div className='z-20'>

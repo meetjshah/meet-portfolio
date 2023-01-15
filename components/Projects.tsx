@@ -64,7 +64,7 @@ const Projects = ({}: Props) => {
                     whileInView={{ opacity:1, y: 0 }}
                     viewport={{ once: true }}
                     src="CNS_Spoke_Bric.jpg"
-                    className='h-[200px] md:h-[400px]'
+                    className='h-[150px] md:h-[400px]'
                     alt=''
                     />
 
@@ -111,7 +111,7 @@ const Projects = ({}: Props) => {
                     whileInView={{ opacity:1, y: 0 }}
                     viewport={{ once: true }}
                     src="Speedy-Rent(Screenshot).png"
-                    className='h-[200px] md:h-[400px]'
+                    className='h-[150px] md:h-[400px]'
                     alt=''
                     />
 
